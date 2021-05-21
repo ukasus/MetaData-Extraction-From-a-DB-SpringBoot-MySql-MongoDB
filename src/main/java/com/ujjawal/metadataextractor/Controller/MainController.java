@@ -91,6 +91,8 @@ public class MainController {
 
 
             }
+
+            conn.close();
             result="MetaData Successfully extracted from oldDB(MySql) and saved to newDb(MongoDB Atlas)";
 
 

@@ -43,6 +43,8 @@ public class JDBCConnector {
             Statement stmt = connection.createStatement();
 
             stmt.execute(query);
+            stmt.close();
+            connection.close();
             return true;
 
         }
